@@ -1,0 +1,85 @@
+/* Importar la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Estilos globales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #d35400;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f39c12;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #d35400;
+}
+
+a {
+  color: #27ae60;
+}
+
+footer {
+  background-color: #f39c12;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+/* ===== Estilo para la franja de íconos ===== */
+.iconos-franja {
+  background-color: #d24c00; /* mismo naranja del header */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* distribución más pareja */
+  align-items: center;
+  gap: 10px; /* espacio entre íconos */
+  padding: 15px 10px;
+}
+
+
+/* ===== Efecto al pasar el mouse ===== */
+.iconos-franja img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.iconos-franja img:hover {
+  transform: scale(1.2);
+}
+
+
