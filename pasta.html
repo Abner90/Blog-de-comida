@@ -1,153 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog de Comida - Pasta</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: #fff7ed;
-      color: #2b2b2b;
-    }
-
-    .iconos-franja {
-      background-color: #d24c00;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .iconos-franja i {
-      font-size: 32px;
-      color: #2b2b2b;
-      opacity: 0.9;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .iconos-franja i:hover {
-      transform: scale(1.2);
-      opacity: 1;
-    }
-
-    header {
-      background-color: #d24c00;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      color: white;
-      font-size: 28px;
-      margin: 0;
-    }
-
-    nav {
-      background-color: #f59e0b;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: #d24c00;
-    }
-
-    footer {
-      background-color: #f39c12;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/Articulos.css" />
+  <title>Seccion de pasta</title>
 </head>
 <body>
-
-  <!-- Franja de iconos arriba -->
-  <div class="iconos-franja">
-    <i class="fas fa-utensils"></i>
-    <i class="fas fa-hat-chef"></i>
-    <i class="fas fa-blender"></i>
-    <i class="fas fa-spoon"></i>
-    <i class="fas fa-drumstick-bite"></i>
-    <i class="fas fa-pepper-hot"></i>
-    <i class="fas fa-bowl-rice"></i>
-    <i class="fas fa-fish"></i>
-    <i class="fas fa-mug-hot"></i>
-    <i class="fas fa-cookie"></i>
-    <i class="fas fa-carrot"></i>
-  </div>
 
   <header>
     <h1>Bienvenidos a la sección de Pasta</h1>
   </header>
 
-  <nav>
+    <main class="content">
+
+      <section class="article">
+        <h2> Pasta pollo y hongos </h2>
+        <div class="hero-img"> <img src="/img/Pasta.jpg"></div>
+
+        <h1>Receta de Pasta de Pollo</h1>
+        <div class="lines" aria-hidden="true">
+    
+    <h2>Ingredientes</h2>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pizza.html">Pizza en 15 minutos</a></li>
-      <li><a href="pasta.html">Pasta</a></li>
-      <li><a href="hamburguesa.html">Hamburguesa</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2>¿Te encanta la pasta?</h2>
-    <p>En esta sección encontrarás recetas deliciosas y fáciles de preparar con pasta. ¡Vamos a cocinar!</p>
-
-    <h3>Receta destacada:</h3>
-    <p><strong>Pasta al Pesto</strong> – Aprende a preparar una deliciosa pasta con salsa pesto fresca.</p>
-    <p><a href="#">Ver receta</a></p>
-
-    <h3>¿Qué encontrarás en esta sección?</h3>
-    <p>Aquí podrás descubrir recetas variadas de pasta, desde las más clásicas hasta las más innovadoras, perfectas para cualquier ocasión.</p>
-
-    <h3>Consejos para cocinar pasta perfecta:</h3>
-    <ul>
-      <li>Usa abundante agua y sal para cocinar la pasta.</li>
-      <li>No olvides reservar un poco del agua de cocción para la salsa.</li>
-      <li>Prueba la pasta antes de escurrirla para asegurarte de que esté al dente.</li>
+        <li>250 g de pasta (espagueti o penne)</li>
+        <li>2 pechugas de pollo cortadas en cubos</li>
+        <li>1 cebolla pequeña, picada</li>
+        <li>2 dientes de ajo, picados</li>
+        <li>200 ml de crema de leche</li>
+        <li>50 g de queso parmesano rallado</li>
+        <li>2 cucharadas de aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Opcional: perejil picado para decorar</li>
     </ul>
 
-    <h3>Recetas que vienen pronto:</h3>
-    <p>Estamos preparando nuevas recetas de pasta como:</p>
-    <ul>
-      <li>Espaguetis a la carbonara</li>
-      <li>Fettuccine Alfredo</li>
-      <li>Lasagna clásica</li>
-      <li>Pasta primavera</li>
-      <li>Macarrones con queso</li>
-    </ul>
-  </main>
+    <h2>Instrucciones</h2>
+    <ol>
+        <li>Cocina la pasta en agua con sal siguiendo las instrucciones del paquete. Escurre y reserva.</li>
+        <li>En una sartén grande, calienta el aceite de oliva y sofríe la cebolla y el ajo hasta que estén dorados.</li>
+        <li>Agrega los cubos de pollo y cocina hasta que estén dorados y bien cocidos.</li>
+        <li>Reduce el fuego y añade la crema de leche. Mezcla bien y deja cocinar 3-4 minutos.</li>
+        <li>Incorpora la pasta cocida y mezcla para que se impregne con la salsa.</li>
+        <li>Agrega el queso parmesano rallado y mezcla nuevamente. Ajusta sal y pimienta al gusto.</li>
+        <li>Sirve caliente y, si deseas, decora con perejil picado.</li>
+    </ol>
+        </div>
+      </section>
 
-  <footer>
+      <aside>
+        <a class="to-top" href="index.html">Ir a inicio</a>
+
+        <div class="mini-card">
+          <div class="mini-title"> <strong> Hamburguesa clasica </strong></div>
+          <img src="/img/Hamburguesa.jpg" width="100%" alt="Hamburguesa clasica" class="thumb">
+          <li>Las hamburguesas son muy adaptables. Se pueden personalizar con diferentes tipos de carne (res, pollo, pavo, vegetales), quesos, verduras, salsas y panes, lo que permite crear una experiencia gastronómica única. </li>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-title"><strong>Pizza casera</strong></div>
+          <img src="/img/Pizza.jpg" width="100%" alt="Pizza casera" class="thumb">
+          <li>Una pizza casera es una excelente opción porque permite un mayor control sobre los ingredientes, lo que resulta en una opción más saludable y personalizada. Además, puede ser más económica, especialmente para grupos grandes o familias</li>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+      <footer>
     <p>© 2025 Blog de Comida. Todos los derechos reservados.</p>
   </footer>
   
