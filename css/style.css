@@ -1,85 +1,460 @@
-/* Importar la fuente Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Reset y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Estilos globales */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fffaf0;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
 }
 
-header {
-  background-color: #d35400;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #f39c12;
-  margin: 0;
+/* Encabezado con imagen de fondo - MÁS COLORIDA */
+.encabezado-fondo {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
-nav ul li {
-  margin: 0 15px;
+/* Imagen de fondo */
+.encabezado-fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kitchen.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: brightness(1.1) contrast(1.1) saturate(1.2);
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+/* Overlay de color naranja - MUY SUTIL PARA VER LA IMAGEN A TODO COLOR */
+.encabezado-fondo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 140, 0, 0.25), rgba(255, 165, 0, 0.3));
+    z-index: 2;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.overlay {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-h1, h2 {
-  color: #d35400;
+.overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    animation: fadeInUp 1s ease-out;
 }
 
-a {
-  color: #27ae60;
+.overlay p {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
-footer {
-  background-color: #f39c12;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-/* ===== Estilo para la franja de íconos ===== */
-.iconos-franja {
-  background-color: #d24c00; /* mismo naranja del header */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; /* distribución más pareja */
-  align-items: center;
-  gap: 10px; /* espacio entre íconos */
-  padding: 15px 10px;
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
-/* ===== Efecto al pasar el mouse ===== */
-.iconos-franja img:hover {
-  transform: scale(1.2);
-  opacity: 1;
+/* Menú de navegación - REQUERIDO POR RÚBRICA */
+.menu-navegacion {
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.iconos-franja img:hover {
-  transform: scale(1.2);
+.contenedor-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
 
+.menu-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-navegacion a:hover,
+.menu-navegacion a.activo {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de introducción */
+.intro-blog {
+    background: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.intro-blog h2 {
+    color: #ff8c00;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.intro-blog p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sección de artículos - REQUERIDO POR RÚBRICA (3 artículos en columnas) */
+.seccion-articulos {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+}
+
+.titulo-articulos {
+    text-align: center;
+    color: #ff8c00;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.titulo-articulos::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff8c00, #ffa500);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+/* Grid de 3 artículos en columnas */
+.grid-articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Tarjetas de artículos */
+.tarjeta-articulo {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.tarjeta-articulo:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-articulo {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.imagen-articulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-articulo:hover .imagen-articulo img {
+    transform: scale(1.1);
+}
+
+.categoria {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(45deg, #ff8c00, #ffa500);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contenido-articulo {
+    padding: 2rem;
+}
+
+.contenido-articulo h3 {
+    color: #ff8c00;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.descripcion {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.meta-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-info span {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Botones */
+.boton-leer {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff8c00, #ffa500);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.boton-leer:hover {
+    background: linear-gradient(45deg, #e67e00, #ff8c00);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+}
+
+/* Sección de bienvenida */
+.seccion-bienvenida {
+    padding: 4rem 0;
+    background: white;
+}
+
+.contenido-bienvenida {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.texto-bienvenida h2 {
+    color: #ff8c00;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.texto-bienvenida p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.lista-beneficios {
+    list-style: none;
+}
+
+.lista-beneficios li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.imagen-bienvenida img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página - REQUERIDO POR RÚBRICA */
+.pie-pagina {
+    background: linear-gradient(135deg, #333, #444);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-blog h3,
+.enlaces-rapidos h4,
+.redes-sociales h4 {
+    color: #ff8c00;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.info-blog p {
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.enlaces-rapidos ul {
+    list-style: none;
+}
+
+.enlaces-rapidos a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.enlaces-rapidos a:hover {
+    color: #ff8c00;
+}
+
+.iconos-redes a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+    color: #ff8c00;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #555;
+    color: #999;
+}
+
+/* Responsividad - REQUERIDO POR RÚBRICA */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2.5rem;
+    }
+    
+    .overlay p {
+        font-size: 1.1rem;
+    }
+    
+    .menu-navegacion ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .grid-articulos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contenido-bienvenida {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .titulo-articulos {
+        font-size: 2rem;
+    }
+    
+    .intro-blog h2 {
+        font-size: 2rem;
+    }
+    
+    .texto-bienvenida h2 {
+        font-size: 2rem;
+    }
+    
+    .encabezado-fondo {
+        min-height: 400px;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 0 15px;
+    }
+    
+    .overlay h1 {
+        font-size: 2rem;
+    }
+    
+    .contenido-articulo {
+        padding: 1.5rem;
+    }
+    
+    .meta-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

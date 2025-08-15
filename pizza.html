@@ -1,191 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Casera en 15 Minutos</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fef6ec;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Franjas */
-    .iconos-franja {
-      background-color: #d24c00;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      padding: 30px 10px;
-    }
-
-    .iconos-franja i {
-      font-size: 38px;
-      color: #fff3d9;
-    }
-
-    .franja-secundaria {
-      background-color: #f4a300;
-      height: 18px;
-    }
-
-    nav {
-      background-color: #f4a300;
-      padding: 12px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1, h2, h3 {
-      color: #c54200;
-    }
-
-    img {
-      width: 350px;
-      height: auto;
-      display: block;
-      margin: 30px auto;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #d24c00;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
-
-    ul, ol {
-      line-height: 1.8;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza en 15 Minutos - Recetas Rápidas y Caseras</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fuente de Google Fonts (opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado -->
+    <header class="encabezado-articulo">
+        <div class="overlay">
+            <h1>Pizza en 15 Minutos</h1>
+            <p>La receta más rápida y deliciosa que encontrarás</p>
+        </div>
+    </header>
 
-  <!-- Franja de íconos -->
-  <section class="iconos-franja">
-    <i class="fas fa-pizza-slice"></i>
-    <i class="fas fa-pepper-hot"></i>
-    <i class="fas fa-cheese"></i>
-    <i class="fas fa-jar"></i>
-    <i class="fas fa-onion"></i>
-    <i class="fas fa-rolling-pin"></i>
-    <i class="fas fa-bowl-rice"></i>
-    <i class="fas fa-egg"></i>
-    <i class="fas fa-bread-slice"></i>
-    <i class="fas fa-lemon"></i>
-    <i class="fas fa-seedling"></i>
-    <i class="fas fa-fire"></i>
-  </section>
+    <!-- Menú de navegación -->
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#recetas">Recetas</a></li>
+            <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-  <!-- Franja secundaria -->
-  <div class="franja-secundaria"></div>
+    <!-- Contenido principal del artículo -->
+    <main class="contenido-articulo">
+        <article class="articulo-completo">
+            <div class="imagen-destacada">
+                <img src="img/pizza-307395_1280.jpg" alt="Pizza casera recién horneada" />
+            </div>
+            
+            <div class="contenido-texto">
+                <h2>¿Por qué esta receta es especial?</h2>
+                <p>Esta receta de pizza en 15 minutos es perfecta para esos momentos en los que tienes antojo de pizza pero no quieres esperar horas o pedir a domicilio. Con ingredientes básicos que probablemente ya tienes en casa, podrás crear una pizza deliciosa y crujiente.</p>
 
-  <!-- Menú -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pizza.html">Pizza en 15 minutos</a></li>
-      <li><a href="pasta.html">Pasta casera</a></li>
-      <li><a href="hamburguesa.html">Hamburguesa</a></li>
-    </ul>
-  </nav>
+                <h3>Ingredientes necesarios:</h3>
+                <ul class="lista-ingredientes">
+                    <li>1 base de pizza precocida (o tortilla grande)</li>
+                    <li>3 cucharadas de salsa de tomate</li>
+                    <li>150g de queso mozzarella rallado</li>
+                    <li>Pepperoni o jamón al gusto</li>
+                    <li>Champiñones frescos (opcional)</li>
+                    <li>Pimiento verde (opcional)</li>
+                    <li>Orégano seco</li>
+                    <li>Aceite de oliva</li>
+                </ul>
 
-  <!-- Contenido -->
-  <main>
-    <h1>Pizza Casera en 15 Minutos</h1>
+                <h3>Preparación paso a paso:</h3>
+                <ol class="lista-pasos">
+                    <li><strong>Precalienta el horno</strong> a 220°C (425°F)</li>
+                    <li><strong>Prepara la base:</strong> Coloca la base de pizza en una bandeja para horno y pincela ligeramente con aceite de oliva</li>
+                    <li><strong>Añade la salsa:</strong> Extiende la salsa de tomate de manera uniforme, dejando un borde de 1cm</li>
+                    <li><strong>Agrega el queso:</strong> Espolvorea el queso mozzarella sobre toda la superficie</li>
+                    <li><strong>Coloca los toppings:</strong> Distribuye el pepperoni, champiñones y pimiento</li>
+                    <li><strong>Hornea:</strong> Mete al horno por 8-10 minutos hasta que el queso esté dorado</li>
+                    <li><strong>Finaliza:</strong> Retira del horno, espolvorea orégano y deja reposar 2 minutos antes de cortar</li>
+                </ol>
 
-    <p>¿Tienes poco tiempo y muchas ganas de algo delicioso? Esta receta es ideal para quienes buscan un platillo rápido, económico y lleno de sabor. En tan solo 15 minutos tendrás una pizza personal lista para disfrutar.</p>
+                <div class="consejos">
+                    <h3>Consejos de chef:</h3>
+                    <p><strong>💡 Tip profesional:</strong> Para una base más crujiente, hornea la base sola durante 3 minutos antes de añadir los ingredientes.</p>
+                    <p><strong>🧀 Variación:</strong> Mezcla mozzarella con un poco de queso parmesano para más sabor.</p>
+                    <p><strong>🌶️ Toque picante:</strong> Añade unas gotas de aceite picante o chile en polvo antes de hornear.</p>
+                </div>
 
-    <p>Lo mejor de esta pizza exprés es su versatilidad: funciona igual de bien para una cena improvisada, una tarde de películas o ese antojo de último minuto. No necesitas equipo profesional ni técnicas complicadas; con ingredientes básicos y tus manos, vas a lograr una base crujiente, queso derretido y un aroma irresistible que llena la casa.</p>
+                <div class="tiempo-info">
+                    <div class="info-card">
+                        <h4>Tiempo de preparación</h4>
+                        <p>5 minutos</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Tiempo de cocción</h4>
+                        <p>10 minutos</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Porciones</h4>
+                        <p>2-3 personas</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Dificultad</h4>
+                        <p>Fácil</p>
+                    </div>
+                </div>
 
-    <p>Además, es una receta perfecta para personalizar. Si te gusta con mucho queso, adelante. ¿Preferís algo más fresco? Agrega hojas de albahaca al final. ¿Te gustan los sabores intensos? Prueba con aceitunas negras o una pizca de chile en hojuelas. La idea es que la adaptes a tu gusto sin perder tiempo.</p>
+                <div class="compartir">
+                    <h3>¿Te gustó esta receta?</h3>
+                    <p>¡Compártela con tus amigos y familiares! Y no olvides visitarnos para más recetas rápidas y deliciosas.</p>
+                    <a href="index.html" class="boton boton-principal">Ver más recetas</a>
+                </div>
+            </div>
+        </article>
 
-    <img src="img/pizza-3007395_1280.jpg" alt="Pizza casera lista para servir">
+        <!-- Sección de recetas relacionadas -->
+        <section class="recetas-relacionadas">
+            <h3>Otras recetas que te pueden gustar</h3>
+            <div class="grid-relacionadas">
+                <div class="tarjeta-mini">
+                    <img src="img/receta2.jpg" alt="Pasta Carbonara" />
+                    <h4>Pasta Carbonara Express</h4>
+                    <a href="pasta.html" class="boton-mini">Ver receta</a>
+                </div>
+                <div class="tarjeta-mini">
+                    <img src="img/receta3.jpg" alt="Ensalada Mediterránea" />
+                    <h4>Ensalada Mediterránea</h4>
+                    <a href="ensalada.html" class="boton-mini">Ver receta</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h2>¿Por qué es tan práctica esta receta?</h2>
-    <p>Usamos una base ya preparada como pan pita o tortilla de harina, lo cual elimina el proceso de hacer masa desde cero. Además, puedes adaptarla con lo que tengas en casa: jamón, queso, vegetales, pollo desmenuzado, atún o incluso restos de comida del día anterior (¡todo suma!).</p>
-
-    <h3>Ingredientes:</h3>
-    <ul>
-      <li>1 pan pita o tortilla grande</li>
-      <li>4 cucharadas de salsa de tomate</li>
-      <li>Queso mozzarella al gusto</li>
-      <li>Jamón, pepperoni o vegetales a elección</li>
-      <li>Orégano, albahaca u otras hierbas secas</li>
-    </ul>
-
-    <h3>Preparación paso a paso:</h3>
-    <ol>
-      <li><strong>Precalienta el horno</strong> a 180°C o una sartén con tapa.</li>
-      <li><strong>Coloca la base</strong> (pan o tortilla) sobre una bandeja o sartén sin aceite.</li>
-      <li><strong>Unta la salsa</strong> uniformemente.</li>
-      <li><strong>Añade el queso</strong> y tus ingredientes preferidos.</li>
-      <li><strong>Espolvorea las especias</strong> que más te gusten.</li>
-      <li><strong>Hornea o cocina tapado</strong> por 8-10 minutos hasta que el queso esté fundido.</li>
-      <li><strong>Sirve caliente</strong> y acompaña con una bebida fresca o ensalada.</li>
-    </ol>
-
-    <h3>Variaciones rápidas (para no aburrirte):</h3>
-    <ul>
-      <li><strong>Margarita:</strong> solo salsa, mozzarella y albahaca fresca al final.</li>
-      <li><strong>Hawaiana exprés:</strong> jamón, piña y un toque de orégano.</li>
-      <li><strong>Veggie:</strong> pimientos, cebolla, maíz dulce y champiñones.</li>
-      <li><strong>BBQ pollo:</strong> salsa barbacoa en lugar de tomate, pollo desmenuzado y cebolla morada.</li>
-      <li><strong>3 quesos:</strong> mezcla de mozzarella, cheddar y parmesano.</li>
-    </ul>
-
-    <h3>Tips útiles (evita errores comunes):</h3>
-    <ul>
-      <li>No satures con salsa: demasiada humedad ablanda la base.</li>
-      <li>Si usas vegetales con mucha agua (tomate, champiñón), córtalos finos.</li>
-      <li>¿La base quedó muy blanda? Dale 2 minutos de calor directo en sartén.</li>
-    </ul>
-
-    <h3>Cómo conservar y recalentar:</h3>
-    <p>Si te sobra, guarda las porciones en un recipiente hermético en refrigeración por hasta 2 días. Para recalentarlas y que queden crujientes de nuevo, usa sartén a fuego medio 3–4 minutos o airfryer 3 minutos.</p>
-
-    <p><a href="index.html">← Volver al inicio</a></p>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Blog de Comida. Todos los derechos reservados.</p>
-  </footer>
-
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2025 Blog de Comida. Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
