@@ -1,38 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza en 15 Minutos - Recetas Rápidas y Caseras</title>
-    <!-- Enlace al CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Fuente de Google Fonts (opcional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog de Comida - Pasta</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff7ed;
+      color: #2b2b2b;
+    }
+
+    .iconos-franja {
+      background-color: #d24c00;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .iconos-franja i {
+      font-size: 32px;
+      color: #2b2b2b;
+      opacity: 0.9;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .iconos-franja i:hover {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    header {
+      background-color: #d24c00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #f59e0b;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #d24c00;
+    }
+
+    footer {
+      background-color: #f39c12;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .img-centro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .img-centro img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+  </style>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="encabezado-articulo">
-        <div class="overlay">
-            <h1>Pizza en 15 Minutos</h1>
-            <p>La receta más rápida y deliciosa que encontrarás</p>
-        </div>
-    </header>
 
-    <!-- Menú de navegación -->
-    <nav class="menu-navegacion">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#recetas">Recetas</a></li>
-            <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+  <!-- Franja de iconos arriba -->
+  <div class="iconos-franja">
+    <i class="fas fa-utensils"></i>
+    <i class="fas fa-hat-chef"></i>
+    <i class="fas fa-blender"></i>
+    <i class="fas fa-spoon"></i>
+    <i class="fas fa-drumstick-bite"></i>
+    <i class="fas fa-pepper-hot"></i>
+    <i class="fas fa-bowl-rice"></i>
+    <i class="fas fa-fish"></i>
+    <i class="fas fa-mug-hot"></i>
+    <i class="fas fa-cookie"></i>
+    <i class="fas fa-carrot"></i>
+  </div>
 
-    <!-- Contenido principal del artículo -->
-    <main class="contenido-articulo">
+  <header>
+    <h1>Bienvenidos a la sección de Pasta</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="pizza.html">Pizza en 15 minutos</a></li>
+      <li><a href="pasta.html">Pasta</a></li>
+      <li><a href="hamburguesa.html">Hamburguesa</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido-articulo">
         <article class="articulo-completo">
-            <div class="imagen-destacada">
-                <img src="img/pizzahongos.png" alt="Pizza casera recién horneada" />
+            <div class="img-centro">
+                <img src="img/pizzahongo.png" alt="Hamburguesa de pollo" />
             </div>
             
             <div class="contenido-texto">
@@ -95,35 +198,11 @@
                 </div>
             </div>
         </article>
-
-        <!-- Sección de recetas relacionadas -->
-        <section class="recetas-relacionadas">
-            <h3>Otras recetas que te pueden gustar</h3>
-            <div class="grid-relacionadas">
-                <div class="tarjeta-mini">
-                    <img src="img/pastapesto.jpg" alt="Pasta al Pesto" />
-                    <h4>Pasta al Pesto</h4>
-                    <a href="pasta.html" class="boton-mini">Ver receta</a>
-                </div>
-                <div class="tarjeta-mini">
-                    <img src="img/hamburguesapollo.jpg" alt="Hamburguesa de Pollo" />
-                    <h4>Hamburguesa de Pollo</h4>
-                    <a href="hamburguesa.html" class="boton-mini">Ver receta</a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="pie-pagina">
-        <div class="contenedor">
-            <p>&copy; 2025 Blog de Comida. Todos los derechos reservados.</p>
-            <div class="redes-sociales">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 Blog de Comida. Todos los derechos reservados.</p>
+  </footer>
+  
 </body>
 </html>
